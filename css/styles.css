@@ -13,6 +13,7 @@
     --header1-size: 2.5rem;
     --header2-size: 2rem;
     --text-size: 1.25rem;
+    --nav-text-size: 0.9rem;
 }
 
 * {
@@ -46,14 +47,18 @@ nav {
 ul {
     display: flex;
     justify-content: center;
+
+    
 }
 
 li {
-    display: inline;  
+    display: inline;
+    font-size: var(--nav-text-size);
 }
 
 li a {
     color: var(--box-color);
+    padding: 10px;
 }
 
 li :hover {
@@ -70,7 +75,7 @@ h2, p, a {
     
     text-decoration: none;
     color: var(--text-color);
-    padding: 10px;
+    padding: 20px;
 }
 
 h1 {
@@ -102,13 +107,8 @@ button {
     all: unset;    
     background-color: var(--button-color);
     color: var(--text-color);
-    
     padding: 15px;
     border-radius: 25px;
-}
-
-.column a :hover {
-    background-color: var(--button-hover-color);
 }
 
 .text_box {
@@ -124,7 +124,7 @@ header {
 }
 
 /*wrapper*/
-#small.wrapper {
+#small-wrapper.wrapper {
     padding-top: 20px;
     padding-bottom: 20px;
 }
@@ -140,11 +140,11 @@ header {
     display: flex;
 }
 
-#large.container {
+#large-container.container {
     justify-content: center;
 }
 
-#small.container {
+#small-container.container {
     justify-content: space-between;
 
     margin-left: 10%;
@@ -152,7 +152,7 @@ header {
 }
 
 /*columns*/
-#large.column  {
+#large-column.column  {
     background-color: var(--box-color);
 
     width: 50%;
@@ -160,21 +160,21 @@ header {
     padding-bottom: 20px;
 }
 
-#large.column figure {
+#large-column figure {
     width: 100%;
     height: 100%;
 
     object-fit: cover;
 }
 
-#small.column {
+.column-small {
     background-color: var(--box-color);
     
     border-radius: 5px;
     width: 353px;
 }
 
-#small.column figure {
+.column-small figure {
     overflow: hidden;
 
     border-top-right-radius: 5px;
@@ -196,7 +196,7 @@ header {
     flex-direction: row;
 }
 
-.location a {
+.location button {
     margin: auto;
     margin-right: 0;
 }
@@ -309,21 +309,21 @@ footer {
         padding: 0%;
     }
 
-    #small.container {
+    #small-container.container {
         margin: auto;
     }
 
-    #small.column {
+    .column-small {
         width: 100%;
 
         border-radius: 0%;
     }
-    #small.column figure {
+    .column-small figure {
         width: 100%;
         height: 100%;
     }
 
-    #large.column {
+    #large-column.column {
         width: 100%;
     }
     #large.column figure {
