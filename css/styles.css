@@ -65,7 +65,11 @@ li :hover {
     color: var(--nav-text-hover-color);
 }
 
-li #active {
+li #active1 {
+    color: var(--button-color);
+}
+
+li #active2 {
     color: var(--button-color);
 }
 
